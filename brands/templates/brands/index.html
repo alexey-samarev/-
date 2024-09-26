@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партнёры</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Brand <span>X</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'shop' %}">Магазин</a></li>
+            <li><a href="{% url 'new' %}">Поступление</a></li>
+            <li><a href="{% url 'about' %}">О нас</a></li>
+            <li><a href="{% url 'brands' %}">Наши партнёры</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="brands" id="brands">
+            <div class="heading">
+                <h2>Наши Партнёры</h2>
+            </div>
+            <div class="brands-container">
+                <img src="/static/img/Google.png" alt="">
+                <img src="/static/img/amazon.png" alt="">
+                <img src="/static/img/netflix.png" alt="">
+                <img src="/static/img/tesla.png" alt="">
+                <img src="/static/img/starbucks.png" alt="">
+                <img src="/static/img/zoom.png" alt="">
+            </div>
+        </section>
+        <section class="newsletter" id="contact">
+            <h2>Подпишитесь на Рассылку Новостей</h2>
+            <div class="news-box">
+                <input type="text" placeholder="Enter Your Email...">
+                <a href="#" class="btn">Подписаться</a>
+            </div>
+        </section>
+    </main>
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Brand <span>X.</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt amet minus mollitia impedit qui asperiores!</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Контакты</h3>
+            <span>г.Воронеж, RU 353498</span>
+            <span>+7 953 290 82 33</span>
+            <span>brian@brandx.com</span>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; Все права защищены.</p>
+    </div>
+</body>
+</html>
